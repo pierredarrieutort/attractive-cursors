@@ -1,0 +1,18 @@
+@import url(_cursor.scss);
+
+.cb-demo {
+  background: orange;
+
+  .cb-demo-content {
+    height: 98vh;
+    display: grid;
+    place-items: center;
+
+    .cb-demo-item {
+      width: 10em;
+      aspect-ratio: 1;
+      background: #fff;
+      border-radius: 1em;
+    }
+  }
+}
