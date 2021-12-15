@@ -22,8 +22,8 @@ export default class Magnetic {
       this.y = this.el.offsetTop - window.pageYOffset
       this.x = this.el.offsetLeft - window.pageXOffset
 
-      this.width = this.el.clientWidth
-      this.height = this.el.clientHeight
+      this.width = this.el.offsetWidth
+      this.height = this.el.offsetHeight
     })
 
     this.el.addEventListener('mousemove', e => {

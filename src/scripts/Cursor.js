@@ -49,8 +49,8 @@ export default class Cursor {
         const { top, left } = target.getBoundingClientRect()
 
         this.stick = {
-          y: top + (target.clientHeight / 2),
-          x: left + (target.clientWidth / 2)
+          y: top + (target.offsetHeight / 2),
+          x: left + (target.offsetWidth / 2)
         }
     
         this.move(this.stick.x, this.stick.y, 5)

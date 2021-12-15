@@ -2,7 +2,7 @@
   "name": "attractive-cursor",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel src/index.pug",
+    "start": "parcel src/index.pug --no-source-maps",
     "build": "parcel build src/index.pug"
   },
   "author": "Pierre Darrieutort",
