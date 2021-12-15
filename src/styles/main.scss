@@ -54,6 +54,13 @@ body {
         .demo-item {
           width: 10rem;
           aspect-ratio: 1;
+          display: grid;
+          place-items: center;
+          height: fit-content;
+          font-family: monospace;
+          font-size: 1rem;
+          text-transform : uppercase;
+          text-align: center;
 
           &:first-child {
             background: #fff;
@@ -61,19 +68,13 @@ body {
           }
 
           &:last-child {
-            display: grid;
-            place-items: center;
-            height: fit-content;
             overflow: hidden;
 
             button {
               padding: .4rem .8rem;
-              font-family: monospace;
-              font-size: 1rem;
               background: #fff;
               border-radius: .4rem;
               border: none;
-              text-transform : uppercase;
             }
           }
         }

@@ -2,7 +2,7 @@ import gsap from 'gsap'
 
 export default class Cursor {
   constructor () {
-    if(document.getElementById('cursor')) return
+    if (document.getElementById('cursor')) return
     this.init()
   }
 
@@ -52,10 +52,28 @@ export default class Cursor {
           y: top + (target.offsetHeight / 2),
           x: left + (target.offsetWidth / 2)
         }
-    
+
         this.move(this.stick.x, this.stick.y, 5)
       })
       stickable.addEventListener('mouseleave', () => this.stick = false)
+    })
+
+    document.querySelectorAll('.cursor-autoscale-area').forEach(autoscaled => {
+      autoscaled.addEventListener('mouseenter', () => {
+        const uniqueChild = autoscaled.firstElementChild
+
+        // TODO : calculate diagonal to get a better behavior
+        const targetSize = Math.ceil(Math.max(uniqueChild.offsetWidth, uniqueChild.offsetHeight))
+        const cursorSize = parseInt(window.getComputedStyle(document.body).getPropertyValue('--cursorSize'))
+
+        const growFactor = 1.2 * (targetSize / cursorSize)
+        
+        document.documentElement.style.setProperty('--growFactor', growFactor)
+
+        this.setState('-autoscale')
+      })
+
+      autoscaled.addEventListener('mouseleave', () => this.removeState('-autoscale'))
     })
   }
 
@@ -93,7 +111,7 @@ export default class Cursor {
 
   hide () {
     clearInterval(this.visibleInt)
-    
+
     this.el.classList.remove('-visible')
     this.visibleInt = setTimeout(() => this.visible = false, 300)
   }

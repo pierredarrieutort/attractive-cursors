@@ -17,11 +17,21 @@ html(lang="fr")
       .demo-content
         .demo-wrapper
           .cursor-stick-area.demo-item(data-cursor="-exclusion,-large")
+            p Sticky case
           .transitioner ⇨
           .cursor-stick-area.demo-item(data-cursor="-exclusion,-large")
             button Click!
         .demo-wrapper
           .cursor-stick-area.cursor-magnetic-area.demo-item(data-cursor="-exclusion,-large")
+            p Magnetic case
           .transitioner ⇨
           .cursor-stick-area.cursor-magnetic-area.demo-item(data-cursor="-exclusion,-large")
+            button Click!
+        .demo-wrapper
+          .cursor-autoscale-area.demo-item(data-cursor="-exclusion")
+            p Autocaled case
+              br
+              i (On unique child)
+          .transitioner ⇨
+          .cursor-autoscale-area.demo-item(data-cursor="-exclusion")
             button Click!

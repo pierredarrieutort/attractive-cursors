@@ -1,3 +1,8 @@
+:root {
+  --cursorSize: 48px;
+  --growFactor: 1;
+}
+
 #cursor {
   position: fixed;
   top: 0;
@@ -15,8 +20,8 @@
     top: -24px;
     left: -24px;
     display: block;
-    width: 48px;
-    height: 48px;
+    width: var(--cursorSize);
+    aspect-ratio: 1;
     transform: scale(0);
     border-radius: 50%;
     transition: transform .3s ease-in-out, opacity .1s;
@@ -39,5 +44,9 @@
 
   &.-large::before {
     transform: scale(2);
+  }
+
+  &.-autoscale::before {
+    transform: scale(var(--growFactor));
   }
 }
