@@ -7,7 +7,7 @@ export default class Cursor {
 
   DOMWarmUp () {
     this.el = document.createElement('div')
-    this.el.className = 'cb-cursor'
+    this.el.className = 'cursor'
 
     document.body.appendChild(this.el)
   }

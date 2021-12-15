@@ -1,14 +1,14 @@
 @import '_cursor.scss';
 
-.cb-demo {
+.demo {
   background: orange;
 
-  .cb-demo-content {
+  .demo-content {
     height: 98vh;
     display: grid;
     place-items: center;
 
-    .cb-demo-item {
+    .demo-item {
       width: 10em;
       aspect-ratio: 1;
       background: #fff;
