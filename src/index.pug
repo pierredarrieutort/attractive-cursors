@@ -9,6 +9,19 @@ html(lang="fr")
     script(src='scripts/index.js' type="module" defer)
   body
     .demo
+      .demo-titles
+        h1 Attractive cursors
+        .demo-subtitles
+          h2 Structure
+          h2 Result
       .demo-content
-        .cursor-stick-area.demo-item(data-cursor="-exclusion,-large")
-        .cursor-stick-area.cursor-magnetic-area.demo-item(data-cursor="-exclusion,-large")
+        .demo-wrapper
+          .cursor-stick-area.demo-item(data-cursor="-exclusion,-large")
+          .transitioner ⇨
+          .cursor-stick-area.demo-item(data-cursor="-exclusion,-large")
+            button Click!
+        .demo-wrapper
+          .cursor-stick-area.cursor-magnetic-area.demo-item(data-cursor="-exclusion,-large")
+          .transitioner ⇨
+          .cursor-stick-area.cursor-magnetic-area.demo-item(data-cursor="-exclusion,-large")
+            button Click!
