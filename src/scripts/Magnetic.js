@@ -11,6 +11,9 @@ export default class Magnetic {
     this.width = 0
     this.height = 0
 
+    if (this.el.dataset.magnetized) return
+    this.el.dataset.magnetized = true
+
     this.bind()
   }
 

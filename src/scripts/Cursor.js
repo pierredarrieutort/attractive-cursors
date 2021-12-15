@@ -2,6 +2,7 @@ import gsap from 'gsap'
 
 export default class Cursor {
   constructor () {
+    if(document.getElementById('cursor')) return
     this.init()
   }
 
@@ -13,7 +14,7 @@ export default class Cursor {
 
   DOMWarmUp () {
     this.el = document.createElement('div')
-    this.el.className = 'cursor'
+    this.el.id = 'cursor'
 
     document.body.appendChild(this.el)
   }
