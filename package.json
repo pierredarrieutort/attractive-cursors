@@ -1,14 +1,11 @@
 {
-  "name": "magnetic-cursor",
+  "name": "attractive-cursor",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.pug",
     "build": "parcel build src/index.pug"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Pierre Darrieutort",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-pug": "^2.0.1",
