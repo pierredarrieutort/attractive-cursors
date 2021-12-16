@@ -46,6 +46,13 @@ body {
         justify-content: space-between;
         align-items: center;
 
+        .autoscale-inner-wrapper {
+          display: grid;
+          place-content: center;
+          height: 100%;
+          width: 100%;
+        }
+
         .transitioner {
           font-size: 5rem;
           align-self: center;
@@ -59,7 +66,7 @@ body {
           height: fit-content;
           font-family: monospace;
           font-size: 1rem;
-          text-transform : uppercase;
+          text-transform: uppercase;
           text-align: center;
 
           &:first-child {

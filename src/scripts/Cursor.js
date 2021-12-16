@@ -62,8 +62,7 @@ export default class Cursor {
       autoscaled.addEventListener('mouseenter', () => {
         const uniqueChild = autoscaled.firstElementChild
 
-        // TODO : calculate diagonal to get a better behavior
-        const targetSize = Math.ceil(Math.max(uniqueChild.offsetWidth, uniqueChild.offsetHeight))
+        const targetSize = Math.ceil(Math.hypot(uniqueChild.offsetWidth, uniqueChild.offsetHeight))
         const cursorSize = parseInt(window.getComputedStyle(document.body).getPropertyValue('--cursorSize'))
 
         const growFactor = 1.2 * (targetSize / cursorSize)
