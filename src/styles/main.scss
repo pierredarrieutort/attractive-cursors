@@ -46,6 +46,16 @@ body {
         justify-content: space-between;
         align-items: center;
 
+        &:not(:first-child) p::first-letter {
+          font-size: 2rem;
+          font-weight: bold;
+          opacity: .4;
+        }
+
+        .transitioner {
+          opacity: .15;
+        }
+
         .autoscale-inner-wrapper {
           display: grid;
           place-content: center;
@@ -69,6 +79,10 @@ body {
           text-transform: uppercase;
           text-align: center;
 
+          i {
+            font-size: .8rem;
+          }
+
           &:first-child {
             background: #fff;
             border-radius: 10px;
@@ -82,6 +96,13 @@ body {
               background: #fff;
               border-radius: .4rem;
               border: none;
+              font-size: 1.4rem;
+              cursor: pointer;
+
+              &.autoscale-example {
+                font-size: .5rem;
+                font-weight: bold;
+              }
             }
           }
         }

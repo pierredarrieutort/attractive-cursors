@@ -65,7 +65,7 @@ export default class Cursor {
         const targetSize = Math.ceil(Math.hypot(uniqueChild.offsetWidth, uniqueChild.offsetHeight))
         const cursorSize = parseInt(window.getComputedStyle(document.body).getPropertyValue('--cursorSize'))
 
-        const growFactor = 1.2 * (targetSize / cursorSize)
+        const growFactor = 1.01 * (targetSize / cursorSize)
         
         document.documentElement.style.setProperty('--growFactor', growFactor)
 

@@ -1,5 +1,5 @@
 {
-  "name": "attractive-cursor",
+  "name": "attractive-cursors",
   "version": "1.0.0",
   "scripts": {
     "start": "parcel src/index.pug --no-source-maps",

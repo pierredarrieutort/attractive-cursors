@@ -4,7 +4,7 @@ html(lang="fr")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Magnetic Cursor
+    title Attractive cursors
     link(rel="stylesheet" href="styles/main.scss")
     script(src='scripts/index.js' type="module" defer)
   body
@@ -23,16 +23,20 @@ html(lang="fr")
             button Click!
         .demo-wrapper
           .cursor-stick-area.cursor-magnetic-area.demo-item(data-cursor="-exclusion,-large")
-            p Magnetic case
+            p +
+              br
+              | Magnetic case
           .transitioner ⇨
           .cursor-stick-area.cursor-magnetic-area.demo-item(data-cursor="-exclusion,-large")
             button Click!
         .demo-wrapper
-          .cursor-autoscale-area.demo-item(data-cursor="-exclusion")
+          .cursor-stick-area.cursor-magnetic-area.cursor-autoscale-area.demo-item(data-cursor="-exclusion")
             .autoscale-inner-wrapper
-              p Autocaled case
+              p +
+                br
+                | Autocaled case
                 br
                 i (On unique child)
           .transitioner ⇨
-          .cursor-autoscale-area.demo-item(data-cursor="-exclusion")
-            button Click!
+          .cursor-stick-area.cursor-magnetic-area.cursor-autoscale-area.demo-item(data-cursor="-exclusion")
+            button.autoscale-example LITTLE
