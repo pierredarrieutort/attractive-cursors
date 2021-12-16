@@ -13,6 +13,7 @@ body {
     aspect-ratio: 1;
     display: grid;
     place-content: center;
+    box-sizing: border-box;
 
     .content {
       width: 3rem;
@@ -23,7 +24,7 @@ body {
   main {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     width: 800px;
     margin: 0 auto;
 
@@ -38,14 +39,32 @@ body {
         padding: .2rem 1rem;
         border-radius: .4rem;
         max-width: 70ch;
-      }
 
-      &:nth-of-type(1) {
+        i {
+          display: block;
+          margin-bottom: .4rem;
+        }
+      }
+    }
+
+    section {
+      &:nth-child(1) {
         .item {
           border: .5rem dotted red;
 
           .content {
             border: .25rem solid green;
+          }
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        .item {
+          background: #222;
+
+          .content {
+            background: #666;
           }
         }
       }

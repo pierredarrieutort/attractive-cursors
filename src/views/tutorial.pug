@@ -2,8 +2,8 @@ doctype html
 html(lang="fr")
   head
     meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Attractive cursors - Tutorial
     link(rel="stylesheet" href="../styles/tutorial.scss")
     script(src='../scripts/index.js' type="module" defer)
@@ -18,12 +18,24 @@ html(lang="fr")
             .content
           .explanation
             p In red dotted : our dedicated area
-            p In green solid : the target element (If multiple elements are targeted, the behavior is applied to the first one. So put multiple elements in ONE dedicated parent).
+            p In green solid : the target element
+            i (If multiple elements are targeted, the behavior is applied to the first one. So put multiple elements in ONE dedicated parent).
       section
         h2 Apply a dedicated behavior type
         .substructure
-          .item
+          .cursor-stick-area.item
             .content
           .explanation
-            p In red dotted : our dedicated area
-            p In green solid : the target element
+            p We want to apply a stick effect on child when hovering the dark area.
+            p So we add the class "cursor-stick-area" to the dark parent of the targeted element (the light one).
+            p Now if you move your mouse in the dark area, the cursor will stick on light area.
+      section
+        h2 Add effect on cursor when hovering element
+        .substructure
+          .cursor-stick-area.item(data-cursor="-exclusion,-large")
+            .content
+          .explanation
+            p Now we want to add a large effect on the cursor when hovering the targeted element.
+            p So we add " data-cursor='-large' " attribute to the targeted element.
+            p Now if you move your mouse in the dark area, the cursor will stick on light area and will have a large effect.
+            i You can also add "-exclusion" to the attribute to add a exclusion blending effect. (To add it, separate the values with a comma and WHITHOUT a space).
