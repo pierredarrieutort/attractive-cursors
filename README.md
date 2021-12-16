@@ -19,7 +19,7 @@ Several problems remain :
 The purpose of this project is therefore to provide those who want a simple and flexible solution to highlight the "Call-To-Action" of their site. 
 
 ## Demo
-You can check the playground here : 🚧 WIP 🚧
+You can check the playground here : https://attractive-cursors.vercel.app
 
 ## Setup
 
