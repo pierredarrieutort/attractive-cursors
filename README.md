@@ -30,7 +30,7 @@ $ git clone https://github.com/pierredarrieutort/attractive-cursors.git
 ```
 
 ## Getting Started
-🚧 WIP 🚧
+🚧 WIP *(Will be available when project will be a npm package)* 🚧
 
 ## Behavior types
 
