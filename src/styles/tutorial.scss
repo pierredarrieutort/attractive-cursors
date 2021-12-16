@@ -1,0 +1,54 @@
+@import '_cursor.scss';
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #F37335, #FDC830);
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+
+  .item {
+    width: 10rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+
+    .content {
+      width: 3rem;
+      aspect-ratio: 1;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 800px;
+    margin: 0 auto;
+
+    .substructure {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .explanation {
+        background: #fff;
+        text-align: left;
+        padding: .2rem 1rem;
+        border-radius: .4rem;
+        max-width: 70ch;
+      }
+
+      &:nth-of-type(1) {
+        .item {
+          border: .5rem dotted red;
+
+          .content {
+            border: .25rem solid green;
+          }
+        }
+      }
+    }
+  }
+}
