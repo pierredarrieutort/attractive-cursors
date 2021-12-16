@@ -2,8 +2,8 @@
   "name": "attractive-cursors",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel src/index.pug --no-source-maps",
-    "build": "parcel build src/index.pug"
+    "start": "parcel src/views/index.pug --no-source-maps",
+    "build": "parcel build src/views/index.pug"
   },
   "author": "Pierre Darrieutort",
   "license": "ISC",
@@ -13,6 +13,6 @@
     "parcel": "^2.0.1"
   },
   "dependencies": {
-    "gsap": "^3.8.0"
+    "gsap": "^3.9.0"
   }
 }
