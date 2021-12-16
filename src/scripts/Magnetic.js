@@ -14,10 +14,10 @@ export default class Magnetic {
     if (this.el.dataset.magnetized) return
     this.el.dataset.magnetized = true
 
-    this.bind()
+    this.eventsBinding()
   }
 
-  bind () {
+  eventsBinding () {
     this.el.addEventListener('mouseenter', () => {
       this.y = this.el.offsetTop - window.pageYOffset
       this.x = this.el.offsetLeft - window.pageXOffset
