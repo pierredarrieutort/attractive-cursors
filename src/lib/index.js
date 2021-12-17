@@ -7,3 +7,4 @@ const AttractiveCursors = {
 }
 
 export default AttractiveCursors
+export { Cursor, Magnetic }
