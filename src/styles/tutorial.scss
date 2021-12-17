@@ -8,6 +8,17 @@ body {
   text-align: center;
   padding: 2rem;
 
+  code {
+    all: initial;
+    font-family: monospace;
+    background: #333;
+    color: #fff;
+    padding: .15rem .4rem;
+    border-radius: .4rem;
+    margin: 0 .25rem .2rem;
+    display: inline-block;
+  }
+
   .item {
     width: 10rem;
     aspect-ratio: 1;

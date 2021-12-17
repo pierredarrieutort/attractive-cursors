@@ -11,7 +11,9 @@ html(lang="fr")
     aside.cursor-magnetic-area
       a(href="./index.pug") Playground here!
     h1 Step-by-step tutorial
-    p WIP - to be at the moment where all is OK
+    p To enable all cursors effects you need to import it from the library.
+    p
+      code import { Cursor } from 'attractive-cursor'
     main
       section
         h2 Structure
@@ -19,8 +21,8 @@ html(lang="fr")
           .item
             .content
           .explanation
-            p In red dotted : our dedicated area
-            p In green solid : the target element
+            p In red dotted : our dedicated area.
+            p In green solid : the target element.
             i (If multiple elements are targeted, the behavior is applied to the first one. So put multiple elements in ONE dedicated parent).
       section
         h2 Apply a dedicated behavior type
@@ -29,7 +31,9 @@ html(lang="fr")
             .content
           .explanation
             p We want to apply a stick effect on child when hovering the dark area.
-            p So we add the class "cursor-stick-area" to the dark parent of the targeted element (the light one).
+            p So we add the class
+              code cursor-stick-area
+              | to the dark parent of the targeted element (the light one).
             p Now if you move your mouse in the dark area, the cursor will stick on light area.
       section
         h2 Add effect on cursor when hovering element
@@ -38,6 +42,10 @@ html(lang="fr")
             .content
           .explanation
             p Now we want to add a large effect on the cursor when hovering the targeted element.
-            p So we add " data-cursor='-large' " attribute to the targeted element.
+            p So we add
+              code data-cursor='-large'
+              | attribute to the targeted element.
             p Now if you move your mouse in the dark area, the cursor will stick on light area and will have a large effect.
-            i You can also add "-exclusion" to the attribute to add a exclusion blending effect. (To add it, separate the values with a comma and WHITHOUT a space).
+            i You can also add
+              code -exclusion
+              | to the attribute to add a exclusion blending effect. (To add it, separate the values with a comma and WHITHOUT a space).
