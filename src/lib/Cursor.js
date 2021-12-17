@@ -1,3 +1,4 @@
+import './cursor.scss'
 import gsap from 'gsap'
 
 export default class Cursor {
