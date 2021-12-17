@@ -8,6 +8,7 @@
   "main": "lib/index.js",
   "author": "Pierre Darrieutort",
   "license": "ISC",
+  "description": "A tiny lib to add effects on your cursor and elements when hovering them",
   "devDependencies": {
     "@parcel/transformer-pug": "^2.0.1",
     "@parcel/transformer-sass": "^2.0.1",
