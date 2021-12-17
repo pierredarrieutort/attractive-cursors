@@ -1,14 +1,11 @@
 {
-  "name": "attractive-cursors",
-  "version": "1.0.0",
+  "name": "attractive-cursors-website",
   "scripts": {
     "start": "parcel src/views/index.pug --no-source-maps",
     "build": "parcel build src/views/index.pug"
   },
-  "main": "lib/index.js",
   "author": "Pierre Darrieutort",
   "license": "ISC",
-  "description": "A tiny lib to add effects on your cursor and elements when hovering them",
   "devDependencies": {
     "@parcel/transformer-pug": "^2.0.1",
     "@parcel/transformer-sass": "^2.0.1",

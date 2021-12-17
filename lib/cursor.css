@@ -1,0 +1,50 @@
+:root {
+  --cursorSize: 48px;
+  --growFactor: 1;
+}
+
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  contain: layout style size;
+  pointer-events: none;
+  will-change: transform;
+  transition: opacity 0.3s, color 0.4s;
+}
+
+#cursor::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  top: -24px;
+  left: -24px;
+  display: block;
+  width: var(--cursorSize);
+  aspect-ratio: 1;
+  transform: scale(0);
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, opacity 0.1s;
+}
+
+#cursor.-visible:before {
+  transform: scale(0.2);
+}
+
+#cursor.-visible.-active:before {
+  transform: scale(0.23);
+  transition-duration: 0.2s;
+}
+
+#cursor.-exclusion {
+  mix-blend-mode: exclusion;
+}
+
+#cursor.-large::before {
+  transform: scale(2);
+}
+
+#cursor.-autoscale::before {
+  transform: scale(var(--growFactor));
+}

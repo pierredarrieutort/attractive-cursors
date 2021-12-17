@@ -1,0 +1,11 @@
+{
+  "name": "attractive-cursors",
+  "version": "1.0.2",
+  "main": "index.js",
+  "author": "Pierre Darrieutort",
+  "license": "ISC",
+  "description": "A tiny lib to add effects on your cursor and elements when hovering them",
+  "dependencies": {
+    "gsap": "^3.9.0"
+  }
+}
