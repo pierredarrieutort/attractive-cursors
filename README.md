@@ -30,7 +30,7 @@ $ git clone https://github.com/pierredarrieutort/attractive-cursors.git
 ```
 
 ## Getting Started
-A tiny & simple *step-by-step tutorial* is available here : https://attractive-cursors.vercel.app/tutorial.html
+A tiny & simple **step-by-step tutorial** is available here : https://attractive-cursors.vercel.app/tutorial.html
 
 ## Behavior types
 
