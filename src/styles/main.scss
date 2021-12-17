@@ -1,45 +1,9 @@
 @import '_cursor.scss';
+@import '_aside.scss';
 
 body {
   margin: 0;
   background: linear-gradient(45deg, #F37335, #FDC830);
-
-  aside {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 28rem;
-    height: 6rem;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-    box-sizing: border-box;
-
-    &:hover a::after {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
-
-    a {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: teal;
-      font-weight: bold;
-      font-family: monospace;
-      font-size: 1.5rem;
-
-      &::after {
-        content: '';
-        width: 100%;
-        height: .2rem;
-        display: block;
-        background: teal;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform .2s ease-out;
-      }
-    }
-  }
 
   .demo {
     height: 100vh;
