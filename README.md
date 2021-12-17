@@ -22,8 +22,16 @@ The purpose of this project is therefore to provide those who want a simple and 
 You can check the playground here : https://attractive-cursors.vercel.app
 
 ## Setup
+> https://www.npmjs.com/package/attractive-cursors
 
-> 🚧 **At this time, the project isn't under npm package so you need to copy/paste the wanted scripts from `src`.**
+```shell
+$ npm install --save attractive-cursors
+```
+```shell
+$ yarn add attractive-cursors
+```
+
+OR *(to play with source code)*
 
 ```shell
 $ git clone https://github.com/pierredarrieutort/attractive-cursors.git
