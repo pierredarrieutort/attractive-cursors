@@ -30,7 +30,7 @@ $ git clone https://github.com/pierredarrieutort/attractive-cursors.git
 ```
 
 ## Getting Started
-🚧 WIP *(Will be available when project will be a npm package)* 🚧
+A tiny & simple step-by-step tutorial is available here : https://attractive-cursors.vercel.app/tutorial.html
 
 ## Behavior types
 
