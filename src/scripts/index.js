@@ -1,4 +1,4 @@
-import { Cursor, Magnetic } from '../lib/index'
+import { Cursor, Magnetic } from '../../lib/index'
 
 const cursor = new Cursor()
 
