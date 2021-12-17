@@ -5,6 +5,7 @@
     "start": "parcel src/views/index.pug --no-source-maps",
     "build": "parcel build src/views/index.pug"
   },
+  "main": "lib/index.js",
   "author": "Pierre Darrieutort",
   "license": "ISC",
   "devDependencies": {
