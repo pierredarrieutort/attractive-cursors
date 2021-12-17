@@ -1,11 +1,13 @@
-@import '_cursor.scss';
+@import '_github-ribbon.scss';
+@import '_aside.scss';
 
 body {
   margin: 0;
-  background: orange;
+  background: linear-gradient(45deg, #F37335, #FDC830);
+  min-height: 100vh;
+  box-sizing: border-box;
 
   .demo {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -78,6 +80,7 @@ body {
           font-size: 1rem;
           text-transform: uppercase;
           text-align: center;
+          position: relative;
 
           i {
             font-size: .8rem;

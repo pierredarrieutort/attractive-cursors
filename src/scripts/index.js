@@ -1,5 +1,4 @@
-import Cursor from './Cursor.js'
-import Magnetic from './Magnetic.js'
+import { Cursor, Magnetic } from '../lib/index'
 
 const cursor = new Cursor()
 

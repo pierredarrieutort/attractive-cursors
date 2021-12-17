@@ -1,0 +1,105 @@
+@import '_github-ribbon.scss';
+@import '_aside.scss';
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #F37335, #FDC830);
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+
+  code {
+    all: initial;
+    font-family: monospace;
+    background: #333;
+    color: #fff;
+    padding: .15rem .4rem .3rem;
+    border-radius: .4rem;
+    margin: 0 .25rem .2rem;
+    display: inline-block;
+  }
+
+  >section {
+    background: #fff;
+    padding: 1rem 2rem;
+    width: 800px;
+    margin: 2rem auto 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+    text-align: left;
+    box-sizing: border-box;
+
+    code {
+      margin: 0;
+    }
+  }
+
+  .item {
+    width: 10rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    box-sizing: border-box;
+
+    .content {
+      width: 3rem;
+      aspect-ratio: 1;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 800px;
+    margin: 2rem auto 0;
+
+    a {
+      display: inline-block;
+      margin: 0 .5rem;
+    }
+
+    .substructure {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .explanation {
+        background: #fff;
+        text-align: left;
+        padding: .2rem 1rem;
+        border-radius: .4rem;
+        max-width: 70ch;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+
+        i {
+          display: block;
+          margin-bottom: .4rem;
+        }
+      }
+    }
+
+    section {
+      &:first-child{
+        .item {
+          border: .5rem dotted red;
+
+          .content {
+            border: .25rem solid green;
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        .item {
+          background: #222;
+
+          .content {
+            background: #666;
+          }
+        }
+      }
+    }
+  }
+}
