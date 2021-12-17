@@ -2,5 +2,18 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: -1;
+}
+
+.demo-item {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  >section,
+  .substructure .item,
+  .substructure .explanation {
+    position: relative;
+    z-index: 2;
+  }
 }
