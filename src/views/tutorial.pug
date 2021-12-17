@@ -11,9 +11,11 @@ html(lang="fr")
     aside.cursor-magnetic-area
       a(href="./index.pug") Playground here!
     h1 Step-by-step tutorial
-    p To enable all cursors effects you need to import it from the library.
-    p
+    section
+      p To enable cursor effect you need to import it from the library.
       code import { Cursor } from 'attractive-cursor'
+      p Then you can use it in your code.
+      code const cursor = new Cursor()
     main
       section
         h2 Structure
