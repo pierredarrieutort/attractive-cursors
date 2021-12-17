@@ -10,7 +10,7 @@ html(lang="fr")
   body
     aside.cursor-magnetic-area
       a(href="./index.pug") Playground here!
-    h1 Step-by-step tutorial
+    h1 Step-by-step tutorial (POST-Install)
     section
       h2 Instanciate our cursor
       p To enable cursor effect you need to import it from the library.
@@ -53,3 +53,24 @@ html(lang="fr")
             i You can also add
               code -exclusion
               | to the attribute to add a exclusion blending effect. (To add it, separate the values with a comma and WHITHOUT a space).
+      section
+        h2 Add a Magnetic effect to target
+        .substructure
+          .cursor-magnetic-area.item
+            .content
+          .explanation
+            p Now we want to add a magnetic effect to the targeted element.
+            p So we add the class
+              code cursor-magnetic-area
+              | to the targeted element.
+            p Then we write a loop to target each wanted element :
+            code
+              | document.querySelectorAll('.cursor-magnetic-area').forEach(el => {
+              br
+              | &nbsp;&nbsp;const magnetic = new Magnetic(el)
+              br
+              | })
+            p Now if you move your mouse in the dark area, the cursor will have a magnetic effect and will follow the mouse.
+            i (Don't forget to check
+              a(href="https://github.com/pierredarrieutort/attractive-cursors" target="_blank") the library source code
+              | to see how it works deeper).

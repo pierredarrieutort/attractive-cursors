@@ -13,7 +13,7 @@ body {
     font-family: monospace;
     background: #333;
     color: #fff;
-    padding: .15rem .4rem;
+    padding: .15rem .4rem .3rem;
     border-radius: .4rem;
     margin: 0 .25rem .2rem;
     display: inline-block;
@@ -23,7 +23,7 @@ body {
     background: #fff;
     padding: 1rem 2rem;
     width: 800px;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
     text-align: left;
@@ -52,7 +52,12 @@ body {
     flex-direction: column;
     gap: 3rem;
     width: 800px;
-    margin: 0 auto;
+    margin: 2rem auto 0;
+
+    a {
+      display: inline-block;
+      margin: 0 .5rem;
+    }
 
     .substructure {
       display: flex;
@@ -75,7 +80,7 @@ body {
     }
 
     section {
-      &:nth-child(1) {
+      &:first-child{
         .item {
           border: .5rem dotted red;
 
@@ -85,8 +90,7 @@ body {
         }
       }
 
-      &:nth-child(2),
-      &:nth-child(3) {
+      &:not(:first-child) {
         .item {
           background: #222;
 
